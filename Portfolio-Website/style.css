@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #262525;
+    scroll-behavior: smooth;
+}
+.protfolio-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.navlist{
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.navlist li{
+    list-style: none;
+
+}
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+    position: relative;
+}
+.left-container, .right-container{
+    height: 100vh;
+    display: flex;
+}
+.left-container{
+    /* background: #262525; */
+    width: 70%;
+    padding-left: 3rem ;
+    align-items: center;
+
+}
+/*
+.right-container{
+    background: linear-gradient(-45deg, #3877ff, #262526 70%);
+    width: 30%;
+
+} */
+.icon .fa-brands{
+    color: #bbb;
+    font-size: 1.7rem;
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.content{
+    margin-left: 4rem;
+
+}
+.content .intro{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.content .intro span{
+    color: #5DB9EE;
+}
+.content h1{
+    font-size: 4rem;
+    color: #5db9ee;
+}
+.content .detail{
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+.btn-container button{
+    border: .1rem solid #5DB9EE;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all 0.8 ease;
+}
+button:nth-child(1){
+    background: #5DB9EE;
+    color: #262525;
+}
+button:nth-child(2){
+    background: transparent;
+    color: #5DB9EE;
+    margin-left: 2rem;
+}
+.btn-container button:nth-child(1):hover{
+    background: transparent;
+    color: #5DB9EE;
+}
+.btn-container button:nth-child(2):hover{
+    background: #5DB9EE;
+    color: #262525;
+}
+.icon .fa-brands:hover{
+    cursor: pointer;
+    background: linear-gradient(#fff, #5DB9EE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+
+}
+.circle:nth-child(1){
+    background: linear-gradient(90deg, transparent 50%, #262525 50%);
+    width: 38rem;
+
+}
+.circle:nth-child(2){
+    width: 30rem;
+    background-image: url("image/ankush.JPG");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: .7rem solid white;
+    box-shadow: 
+    0 0 3rem #fff,
+    inset 0 0 1rem #fff,
+    0 0 2rem #3877ff,
+    inset 0 0 2rem #3877ff,
+    0 0 4rem #3877ff,
+    inset 0 0 4rem #3877ff ;
+}
+.navlist li a::after, .navlist .active::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .5s;
+}
+.navlist li a:hover::after, .navlist .active::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.circle1 {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    border: .5rem solid white;
+    background-image: url('image/ankush.JPG');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left:15%;
+    box-shadow: 
+    0 0 3rem #fff,
+    inset 0 0 1rem #fff,
+    0 0 2rem #3877ff,
+    inset 0 0 2rem #3877ff,
+    0 0 4rem #3877ff,
+    inset 0 0 4rem #3877ff ;
+}
+.about-container{
+    display: flex;
+}
+.about-heading{
+    text-align: center;
+    text-decoration: underline;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.about-right{
+    margin-left: 10%;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+.about-right h1{
+    font-size: 4rem;
+    line-height: 60px;
+}
+.about-right h1 span {
+    color: #3877ff;
+}
+.about-right button{
+    background: #5DB9EE;
+    border: .1rem solid #5DB9EE;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-top: 50px;
+}
+.about-right h3{
+    color: #fff;
+    font-size: 1.1rem;
+}
+.about-info{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.about-info p{
+    font-size: 1.2rem;
+    color: #fff;
+}
+.about-info .about-answer{
+    font-size: 1.2rem;
+    color: #000;
+}
+.my-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: auto;
+    justify-content: center;
+}
+.card-container{
+    height: 320px;
+    width: 300px;
+    border-radius: 15px;
+    border: 1px solid #3877ff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #5c88e9;
+    gap: 20px;
+}
+.card-content h3{
+    color: #fff;
+    line-height: 40px;
+}
+.card-content p{
+    color: #fff;
+    font-size: 14px;
+}
+
+.card-btn button{
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.line {
+    height: 1px;
+    width: 140px;
+    background-color: #fff;
+}
+
